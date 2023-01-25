@@ -5,32 +5,17 @@
  */
 import { FontAwesome } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import {
-  NavigationContainer,
-  DefaultTheme,
-  DarkTheme,
-} from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
-import { ColorSchemeName } from "react-native";
-
 import Colors from "../constants/Colors";
-
 import LoginScreen from "../screens/Auth/LoginScreen/LoginScreen";
-import Web3Screen from "../screens/PostLogin/Web3Screen";
-import {
-  RootStackParamList,
-  RootTabParamList,
-  TabOneParamList,
-  TabTwoParamList,
-} from "../../types";
+import { RootStackParamList, RootTabParamList } from "../../types";
 import LinkingConfiguration from "./LinkingConfiguration";
 import NotFoundScreen from "../screens/Auth/NotFoundScreen";
-import useColorScheme from "../../hooks/useColorScheme";
 import { Magic } from "@magic-sdk/react-native-expo";
 import { MAGIC_API_KEY } from "../constants/constant";
 import Strings from "../constants/strings";
-import icons from "../../assets/images";
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import HomePageScreen from "../screens/PostLogin/HomePageScreen";

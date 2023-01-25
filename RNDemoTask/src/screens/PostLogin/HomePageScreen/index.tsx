@@ -15,6 +15,7 @@ const HomePageScreen = () => {
     return state.userList.newUserData;
   });
 
+  //api call
   const getUserListData = async (pageNo: number) => {
     const params = {
       page: pageNo,
@@ -27,6 +28,7 @@ const HomePageScreen = () => {
     getUserListData(page);
   }, []);
 
+  // For setting the user data
   useEffect(() => {
     setUserData(userList);
   }, [userList]);
