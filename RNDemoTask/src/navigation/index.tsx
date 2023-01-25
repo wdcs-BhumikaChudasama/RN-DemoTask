@@ -25,7 +25,6 @@ import {
   TabTwoParamList,
 } from "../../types";
 import LinkingConfiguration from "./LinkingConfiguration";
-import HeaderDropdown from "./HeaderDropdown";
 import NotFoundScreen from "../screens/Auth/NotFoundScreen";
 import useColorScheme from "../../hooks/useColorScheme";
 import { Magic } from "@magic-sdk/react-native-expo";
